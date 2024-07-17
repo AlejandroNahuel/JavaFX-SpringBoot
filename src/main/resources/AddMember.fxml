@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="307.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.components.AddMember">
+   <children>
+      <Label fx:id="addMemberLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="101.0" layoutY="34.0" text="Agregar nuevo socio" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLbl" layoutX="27.0" layoutY="123.0" text="Nombre">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastnameLbl" layoutX="27.0" layoutY="168.0" text="Apellido">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dniLbl" layoutX="55.0" layoutY="214.0" text="DNI">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTxtFld" layoutX="89.0" layoutY="121.0" prefHeight="25.0" prefWidth="355.0" promptText="Ingrese nombre de socio" />
+      <TextField fx:id="lastnameTxtFld" layoutX="89.0" layoutY="166.0" prefHeight="25.0" prefWidth="355.0" promptText="Ingrese apellido" />
+      <TextField fx:id="dniTxtFld" layoutX="89.0" layoutY="212.0" prefHeight="25.0" prefWidth="355.0" promptText="Ingrese el DNI" />
+      <Button fx:id="addMemberBtn" layoutX="316.0" layoutY="268.0" mnemonicParsing="false" onAction="#addMember" text="Agregar" />
+      <Button fx:id="cancelBtn" layoutX="382.0" layoutY="268.0" mnemonicParsing="false" text="Cancelar" />
+   </children>
+
+</AnchorPane>
